@@ -1,61 +1,57 @@
-*,
-*::before,
-*::after {
+*{
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
-ul[class],
-ol[class] {
-  padding: 0;
+a{
+  text-decoration: none;
+  color: black;
 }
 
-body,h1,h2,h3,h4,p,ul[class],ol[class],li,figure,figcaption,blockquote,dl,dd 
-{
-  margin: 0;
+.container{
+  font-family:'Rubik', sans-serif;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
 }
 
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+.nav{
+  width: auto;
+  padding: 1% 5%;
+  background-color: #f8f8f8;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-ul[class],
-ol[class] {
-  list-style: none;
+.nav-logo{
+  width: 215px;
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+.nav-menu{
+  width: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+.nav-menu-social{
+  margin: 0 2% 2% 0;
+  font-size: 30px;
 }
 
-article > * + * {
-  margin-top: 1em;
+.nav-menu-options{
+  width: 100%;
+  font-size: 20px;
+  text-align: right;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
+.nav-menu-options a{
+  padding: 2%;
 }
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-
-
-
-
