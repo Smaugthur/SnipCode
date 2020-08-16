@@ -1,0 +1,406 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.container{
+  font-family:'Rubik', sans-serif;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+}
+
+/* CABEZERA */
+
+.nav{
+  width: auto;
+  padding: 1% 5%;
+  background-color: #f8f8f8;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo{
+  width: 215px;
+}
+
+.nav-menu{
+  width: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+}
+
+.nav-menu-social{
+  margin: 0 2% 2% 0;
+  font-size: 30px;
+}
+
+.nav-menu-options{
+  width: 100%;
+  font-size: 20px;
+  text-align: right;
+}
+
+.nav-menu-options a{
+  margin: 0.5%;
+  padding: 0.5%;
+  color: black;
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.nav-menu-options a:hover{
+  color: #f8f8f8;
+  background-color: rgb(85, 81, 74);
+}
+
+/* ENTRADA */
+.open-image{
+  min-height: 700px;
+  background: url('images/computadora.jpg') top/cover no-repeat fixed;
+  color: white;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  align-items: flex-start;
+}
+
+.open-image div{
+  width: 50%;
+  margin: 10% 2% 0 0;
+}
+
+.open-image div h1{
+  font-size: 50px;
+}
+
+.open-image div p{
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+/* SERVICIOS */
+
+.services{
+  padding: 8% 0;
+  background-color: #f8f8f8; 
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.services p{
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: rgb(85, 81, 74);
+}
+
+.services h2{
+  margin-bottom: 30px;
+  font-size:40px;
+  color: rgb(85, 81, 74);
+}
+
+.divisor{
+  margin: 0px auto 40px;
+  width: 75px;
+  border-width: 1px;
+}
+
+.services-content{
+  width: 100%;
+  padding: 0 15%;
+  margin-bottom: 2%;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.services-content-item{
+  margin: 0 3%;
+  text-align: center;
+}
+
+.services-content-item p{
+  font-size: 20px;
+}
+
+.services-content-item img{
+  width: 100%;
+  height: 291px;
+  margin-bottom: 10px;
+  min-width: 300px;
+}
+
+/* SOBRE NOSOTROS */
+
+.about{
+  width: 100%;
+  background-color: #f8f8f8;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.about > :first-child{
+  order: 2;
+  height: auto;
+  width: 50%;
+  padding: 4%;
+  background-color: rgb(70, 66, 66);
+  color: #f8f8f8;
+  text-align: center;
+  font-size: 23px;
+}
+
+.about > :first-child > * {
+  margin: 3% 0;
+}
+
+.about > :first-child h2{
+  font-size:40px;
+}
+
+.about > :first-child a{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  border: #fad252 solid 2px;
+  color: #fad252;
+  font-size: 25px;
+  position: relative;
+  transition: color 0.5s, border-color 0.5s;
+}
+
+.about > :first-child a:hover{
+  color: rgb(172, 127, 255);
+  border-color: rgb(172, 127, 255);
+}
+
+    /* DANIEL RAYO: FOTO Y ANIMACIONES */
+.about-pics-dani{
+  order: 1;
+  min-height: 550px;
+  width: 25%;
+  background: url('images/Dani.png') top/cover no-repeat local;
+  position: relative;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: end;
+  align-items: center;
+}
+
+.about-pics-dani:before{
+  content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: background-color 0.5s;
+}
+
+.about-pics-dani:hover::before{
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-pics-dani h3{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  border: rgb(172, 127, 255) solid 2px;
+  color: rgb(172, 127, 255);
+  font-size: 25px;
+  position: relative;
+  transition: color 0.5s, border-color 0.5s;
+}
+
+.about-pics-dani h3:hover{
+  color: #fad252;
+  border-color: #fad252;
+}
+
+    /* FRANZ: FOTOS Y ANIMACIONES */
+.about-pics-franz{
+  order: 3;
+  min-height: 550px;
+  width: 25%;
+  background: url('images/Imagen\ final.jpg') top/cover no-repeat local;
+  position: relative;
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: end;
+  align-items: center;
+}
+
+.about-pics-franz:before{
+  content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: background-color 0.5s;
+}
+
+.about-pics-franz:hover::before{
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-pics-franz h3{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  border: rgb(172, 127, 255) solid 2px;
+  color: rgb(172, 127, 255);
+  font-size: 25px;
+  position: relative;
+  transition: color 0.5s, border-color 0.5s;
+}
+
+.about-pics-franz h3:hover{
+  color: #fad252;
+  border-color: #fad252;
+}
+
+/* PROYECTOS */
+
+.projects{
+  width:100%;
+  padding: 3% 0;
+  background-color: #f8f8f8;
+}
+
+.projects p{
+  margin-bottom: 1%;
+  color: rgb(85, 81, 74);
+  text-align: center;
+  font-size:18px;
+}
+
+.projects h2{
+  margin-bottom: 2%;
+  color: rgb(85, 81, 74);
+  text-align: center;
+  font-size:40px;
+}
+
+.projects-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+}
+
+.projects-cards img{
+  margin-bottom:1%;
+  width: 100%;
+  height: 400px;
+  transition: opacity 0.5s;
+}
+
+.projects-cards img:hover{
+  opacity: 0.6;
+}
+
+.projects-cards article{
+  padding: 4%;
+  background-color: white;
+  font-family: "Amatic SC";
+  font-size: 30px;
+}
+
+.projects-cards i{
+  font-size: 3.5em;
+}
+
+/* Contactanos */
+
+.contact{
+  width: 100%;
+  padding: 8%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+}
+
+.contact-content{
+  width: 50%;
+  color: rgb(85, 81, 74);
+}
+
+.contact-content h2{
+  font-size: 40px;
+  margin-bottom: 3%;
+}
+
+.contact-content p{
+  font-size: 25px;
+  margin: 4% 4% 4% 6%; 
+  margin-bottom: 4%;
+}
+
+.contact-content p span{
+  font-weight: bold;
+}
+
+/* Pie de Página */
+
+.footer{
+  padding: 3%;
+  background-color: rgb(70, 66, 66);
+  /* FLEXBOX */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer div{
+  width: 50%;
+  margin: 0.3%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.footer-social a{
+  margin: 0px 0.5%;
+  font-size: 30px;
+  color: #f8f8f8;
+}
+
+.footer-menu a{
+  margin: 0px 1%;
+  font-size: 20px;
+  color: #f8f8f8;
+}
+
+.footer-menu a:hover{
+  border-bottom: #f8f8f8 solid 2px;
+}
+
