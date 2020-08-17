@@ -144,7 +144,7 @@ a{
 
 .services-content-item img{
   width: 100%;
-  height: 291px;
+  height: 250px;
   margin-bottom: 8%;
   min-width: 300px;
 }
@@ -318,7 +318,7 @@ a{
 .projects-cards img{
   margin-bottom:1%;
   width: 100%;
-  height: 350px;
+  height: 275px;
   transition: opacity 0.5s;
 }
 
